@@ -4,10 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="library.js"></script>
+    <script defer src="library.js"></script>
     <title>Library</title>
 </head>
 <body>
-    
+    <dialog id="dialogContainer">
+        <form method="dialog">
+            <div class="eachFormElement">
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author">
+            </div>
+            <div class="eachFormElement">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="eachFormElement">
+                <label for="read">Read:</label>
+                <input type="text" id="read" name="read">
+            </div>
+            <div id="buttons">
+                <button>Cancel</button>
+                <button type="submit">Add</button>
+            </div>
+        </form>
+    </dialog>
+    <div id="headline">
+        <H1>Your Library</H1>
+        <button id="addabook">Add a book</button>
+    </div>
+    <div id="app">
+
+    </div>
 </body>
 </html>
