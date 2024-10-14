@@ -1,7 +1,9 @@
 body{
     background-color: #7E7E7E;
     color: whitesmoke;
+    margin: 0;
 }
+
 
 #headline{
     display: flex;
@@ -33,7 +35,11 @@ dialog{
 
 
 #app{
+    display: grid;
     border: solid;
     width: 100vw;
     height: 100vh;
+}
+.eachFormElement{
+    display: flex;
 }
