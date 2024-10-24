@@ -12,23 +12,23 @@
         <form method="dialog" id="formD">
             <div class="eachFormElement">
             <label for="author">Author:</label>
-            <input type="text" id="author" name="author">
+            <input type="text" id="author" name="author" required>
             </div>
             <div class="eachFormElement">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" name="name" required>
             </div>
             <div class="eachFormElement" style="gap: 1rem;">
                 <label for="read">Read:</label>
                 <div style="display: flex; gap: 0.5rem;">
                     <label for="read">Yes</label>
-                        <input type="radio" id="read" name="read" value="true">
+                        <input type="radio" id="read" name="read" value="true" required>
                     <label for="notread">No</label>
-                        <input type="radio" name="read" id="notread" value="false">
+                        <input type="radio" name="read" id="notread" value="false" required>
                     </div>
             </div>
             <div id="buttons">
-                <button>Cancel</button>
+                <button id="cancel" type="button">Cancel</button>
                 <button type="submit" id="submitDialogBtn">Add</button>
             </div>
         </form>
@@ -40,14 +40,6 @@
     <div id="app">
 
     </div>
-    <div></div>
-    <div style="display: flex; flex-direction: row; align-items: flex-start; justify-content: center;">
-<div style="border: solid red; width: 50px;
-height: 50px; margin-top: 1rem;"></div>
-<div style="border: solid green; width: 50px;
-height: 50px;"></div>
-<div style="border: solid yellow; width: 50px;
-height: 50px; margin-top: 1rem;"></div>
 </div>
 </body>
 </html>
