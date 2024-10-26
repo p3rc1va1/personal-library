@@ -9,14 +9,14 @@
     <title>Library</title>
 </head>
 <body>
-    <dialog id="dialogContainer">
+    <dialog id="dialogContainer" style="background-color: whitesmoke;">
         <form method="dialog" id="formD">
             <div class="eachFormElement">
-            <label for="author">Author:</label>
+            <label for="author" style="margin-right: 1rem;">Author:</label>
             <input type="text" id="author" name="author" required>
             </div>
             <div class="eachFormElement">
-                <label for="name">Name:</label>
+                <label for="name" style="margin-right: 1rem;">Name:</label>
                 <input type="text" id="name" name="name" required>
             </div>
             <div class="eachFormElement" style="gap: 1rem;">
@@ -29,8 +29,8 @@
                     </div>
             </div>
             <div id="buttons">
-                <button id="cancel" type="button">Cancel</button>
-                <button type="submit" id="submitDialogBtn">Add</button>
+                <button id="cancel" type="button"><i class="fa-solid fa-xmark" style="color: red;"></i></button>
+                <button type="submit" id="submitDialogBtn"><i class="fa-solid fa-plus fa-fw" style="color: green;"></i></button>
             </div>
         </form>
     </dialog>
